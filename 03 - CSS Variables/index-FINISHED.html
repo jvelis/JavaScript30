@@ -16,6 +16,9 @@
 
     <label for="base">Base Color</label>
     <input id="base" type="color" name="base" value="#ffc600">
+
+    <label for="width">Width</label>
+    <input id="width" type="range" name="width" min="50" max="800" value="800" data-sizing="px">
   </div>
 
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
@@ -25,12 +28,14 @@
       --base: #ffc600;
       --spacing: 10px;
       --blur: 10px;
+      --width: 800px;
     }
 
     img {
       padding: var(--spacing);
       background: var(--base);
       filter: blur(var(--blur));
+      width: var(--width);
     }
 
     .hl {
